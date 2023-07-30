@@ -14,7 +14,7 @@ app.use(express.json());
 const PORT = 8000;
 
 // middleware to serve the files from the public folder (these will be static files)
-app.use(express.static("public"));
+app.use(express.static(`${__dirname}/public`));
 
 //ROLL BAR
 // include and initialize the rollbar library with your access token
