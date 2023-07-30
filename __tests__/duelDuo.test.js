@@ -6,9 +6,9 @@ beforeEach(async () => {
   driver = await new Builder().forBrowser(Browser.CHROME).build();
 });
 
-// afterEach(async () => {
-//   driver.quit();
-// });
+afterEach(async () => {
+  driver.quit();
+});
 
 describe("Duel Duo tests", () => {
   // test to check page title

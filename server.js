@@ -15,6 +15,7 @@ const PORT = 8000;
 
 // middleware to serve the files from the public folder (these will be static files)
 app.use(express.static(`${__dirname}/public`));
+// app.use(express.static("public")); // this middleware code was used to serve the files locally, it is no longer needed when I hosted the files on AWS EC2
 
 //ROLL BAR
 // include and initialize the rollbar library with your access token
